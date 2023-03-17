@@ -3,6 +3,9 @@ package com.mudssky.service.impl;
 import com.mudssky.dao.BookDao;
 import com.mudssky.service.BookService;
 
+/**
+ * @author mudssky
+ */
 public class BookServiceImpl implements BookService {
 
     // 5. 删除业务层中使用new的方式创建的对象

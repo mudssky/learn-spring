@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="_004bean-lifecycle" />
+        <module name="_005DI-setter" />
+        <module name="_001ioc-basic" />
+        <module name="_002bean-config" />
+        <module name="_003bean-instance" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="_001ioc-basic" target="19" />
+      <module name="_001ioc-basic (1)" target="19" />
+      <module name="_002bean-config" target="19" />
+      <module name="_002DI-basic" target="19" />
+      <module name="_003bean-instance" target="19" />
+      <module name="_004bean-lifecycle" target="19" />
+      <module name="_005DI-setter" target="19" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

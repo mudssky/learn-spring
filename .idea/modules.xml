@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/_001ioc-basic/_001ioc-basic.iml" filepath="$PROJECT_DIR$/_001ioc-basic/_001ioc-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_002bean-config/_002bean-config.iml" filepath="$PROJECT_DIR$/_002bean-config/_002bean-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_003bean-instance/_003bean-instance.iml" filepath="$PROJECT_DIR$/_003bean-instance/_003bean-instance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_004bean-lifecycle/_004bean-lifecycle.iml" filepath="$PROJECT_DIR$/_004bean-lifecycle/_004bean-lifecycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_005DI-setter/_005DI-setter.iml" filepath="$PROJECT_DIR$/_005DI-setter/_005DI-setter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/learn-spring.iml" filepath="$PROJECT_DIR$/.idea/learn-spring.iml" />
+    </modules>
+  </component>
+</project>
