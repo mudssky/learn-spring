@@ -11,7 +11,7 @@ import javax.annotation.PreDestroy;
 /**
  * @author mudssky
  */
-@Repository("bookDao")
+@Repository()
 public class BookDaoImpl implements BookDao {
     @Value("zhangsan")
     private String name;
