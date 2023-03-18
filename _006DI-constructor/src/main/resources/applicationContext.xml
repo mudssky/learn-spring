@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--    标准书写-->
+    <!--    <bean id="bookDao" class="com.mudssky.dao.impl.BookDaoImpl">-->
+    <!--        <constructor-arg name="databaseName" value="mysql"></constructor-arg>-->
+    <!--        <constructor-arg name="connectionNum" value="666"></constructor-arg>-->
+    <!--    </bean>-->
+    <!--    <bean id="userDao" class="com.mudssky.dao.impl.UserDaoImpl">-->
+    <!--    </bean>-->
+    <!--    <bean id="bookService" class="com.mudssky.service.impl.BookServiceImpl">-->
+    <!--        <constructor-arg name="bookDao" ref="bookDao"/>-->
+    <!--        <constructor-arg name="userDao" ref="userDao"/>-->
+    <!--    </bean>-->
+
+    <!--    可以不命名，用类型区分，这样耦合度降低，允许形参名称改变-->
+    <!--    <bean id="bookDao" class="com.mudssky.dao.impl.BookDaoImpl">-->
+    <!--        <constructor-arg type="java.lang.String" value="mysql"></constructor-arg>-->
+    <!--        <constructor-arg type="int" value="666"></constructor-arg>-->
+    <!--    </bean>-->
+    <!--    <bean id="userDao" class="com.mudssky.dao.impl.UserDaoImpl">-->
+    <!--    </bean>-->
+    <!--    <bean id="bookService" class="com.mudssky.service.impl.BookServiceImpl">-->
+    <!--        <constructor-arg name="bookDao" ref="bookDao"/>-->
+    <!--        <constructor-arg name="userDao" ref="userDao"/>-->
+    <!--    </bean>-->
+
+    <!--    用参数位置-->
+    <bean id="bookDao" class="com.mudssky.dao.impl.BookDaoImpl">
+        <constructor-arg index="0" type="int" value="666"/>
+        <constructor-arg index="1" value="mysql"/>
+    </bean>
+    <bean id="userDao" class="com.mudssky.dao.impl.UserDaoImpl">
+    </bean>
+    <bean id="bookService" class="com.mudssky.service.impl.BookServiceImpl">
+        <constructor-arg name="bookDao" ref="bookDao"/>
+        <constructor-arg name="userDao" ref="userDao"/>
+    </bean>
+</beans>
