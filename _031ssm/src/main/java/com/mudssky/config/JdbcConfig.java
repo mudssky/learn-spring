@@ -1,4 +1,4 @@
-package mudssky.config;
+package com.mudssky.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.beans.factory.annotation.Value;

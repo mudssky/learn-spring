@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
-    <groupId>com.itheima</groupId>
-    <artifactId>_015spring-mybatis</artifactId>
+    <groupId>com.mudssky</groupId>
+    <artifactId>_016spring-junit</artifactId>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
@@ -66,19 +66,17 @@
             <artifactId>slf4j-log4j12</artifactId><!-- 这里可以根据需要选择不同的绑定 -->
             <version>1.7.32</version><!-- 这里可以根据需要选择不同的版本 -->
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.2.10.RELEASE</version>
+        </dependency>
     </dependencies>
-    <!--        <build>-->
-    <!--            <plugins>-->
-    <!--                <plugin>-->
-    <!--                    <groupId>org.apache.maven.plugins</groupId>-->
-    <!--                    <artifactId>maven-compiler-plugin</artifactId>-->
-    <!--                    <version>3.8.0</version>&lt;!&ndash; 这里可以根据需要选择不同的版本 &ndash;&gt;-->
-    <!--                    <configuration> &lt;!&ndash; 这里可以根据需要添加不同的参数 &ndash;&gt;-->
-    <!--                        <source>1.8</source>&lt;!&ndash; 源代码使用的JDK版本 &ndash;&gt;-->
-    <!--                        <target>1.8</target>&lt;!&ndash; 需要生成的目标class文件的编译版本 &ndash;&gt;-->
-    <!--                        <encoding>UTF-8</encoding>&lt;!&ndash; 字符集编码 &ndash;&gt;-->
-    <!--                    </configuration>-->
-    <!--                </plugin>-->
-    <!--            </plugins>-->
-    <!--        </build>-->
+
 </project>

@@ -1,4 +1,4 @@
-package com.controller;
+package com.mudssky.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +10,6 @@ public class UserController {
     @ResponseBody
     public String save() {
         System.out.println("user save...");
-        return "{'message':'save springmvc'";
+        return "{'message':'save springmvc'}";
     }
 }

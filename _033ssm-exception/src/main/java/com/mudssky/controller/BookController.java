@@ -1,6 +1,7 @@
 package com.mudssky.controller;
 
 import com.mudssky.domain.Book;
+import com.mudssky.exception.SystemException;
 import com.mudssky.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -36,6 +37,12 @@ public class BookController {
 
     @GetMapping("/{id}")
     public Result getById(@PathVariable Integer id) {
+        try {
+
+            int i = 1 / 0;
+        } catch (ArithmeticException e) {
+            throw new SystemException(666, "服务器超时，请重试", e);
+        }
         Book book = bookService.getById(id);
         Integer code = book != null ? Code.GET_OK : Code.GET_ERR;
         String msg = book != null ? "" : "数据查询失败，请重试！";

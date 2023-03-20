@@ -1,47 +1,41 @@
-package mudssky.controller;
+package com.mudssky.controller;
 
+import com.mudssky.domain.Book;
+import com.mudssky.service.BookService;
+import com.mudssky.service.impl.BookServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
-import java.awt.print.Book;
+import java.util.List;
 
-
-@RestController //@Controller + ReponseBody
+@RestController
 @RequestMapping("/books")
 public class BookController {
 
-    //@RequestMapping(method = RequestMethod.POST)
+    //@Autowired
+    private BookService bookService = new BookServiceImpl();
+
     @PostMapping
-    public String save(@RequestBody Book book) {
-        System.out.println("book save..." + book);
-        return "{'module':'book save'}";
+    public boolean save(@RequestBody Book book) {
+        return bookService.save(book);
     }
 
-    //@RequestMapping(value = "/{id}",method = RequestMethod.DELETE)
-    @DeleteMapping("/{id}")
-    public String delete(@PathVariable Integer id) {
-        System.out.println("book delete..." + id);
-        return "{'module':'book delete'}";
-    }
-
-    //@RequestMapping(method = RequestMethod.PUT)
     @PutMapping
-    public String update(@RequestBody Book book) {
-        System.out.println("book update..." + book);
-        return "{'module':'book update'}";
+    public boolean update(@RequestBody Book book) {
+        return bookService.update(book);
     }
 
-    //@RequestMapping(value = "/{id}",method = RequestMethod.GET)
+    @DeleteMapping("/{id}")
+    public boolean delete(@PathVariable Integer id) {
+        return bookService.delete(id);
+    }
+
     @GetMapping("/{id}")
-    public String getById(@PathVariable Integer id) {
-        System.out.println("book getById..." + id);
-        return "{'module':'book getById'}";
+    public Book getById(@PathVariable Integer id) {
+        return bookService.getById(id);
     }
 
-    //@RequestMapping(method = RequestMethod.GET)
     @GetMapping
-    public String getAll() {
-        System.out.println("book getAll...");
-        return "{'module':'book getAll'}";
+    public List<Book> getAll() {
+        return bookService.getAll();
     }
-
 }

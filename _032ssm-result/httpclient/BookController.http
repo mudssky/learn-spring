@@ -1,9 +1,17 @@
 ###
-GET  {{baseUrl}}/user/commonParam?name=张三&age=22
+GET  {{baseUrl}}/books
 
 
 ###
-POST  {{baseUrl}}/user/commonParam
-Content-Type: application/x-www-form-urlencoded
 
-name=张三&age=22
+POST {{baseUrl}}/books
+Content-Type: application/json
+
+{
+  "type": "dsa2",
+  "name": "lhjljlk",
+  "description": "ceshi"
+}
+
+###
+GET {{baseUrl}}/books/13

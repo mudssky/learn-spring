@@ -3,18 +3,18 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--配置bean-->
-    <bean id="bookService" name="service service2 bookEbi" class="com.mudssky.service.impl.BookServiceImpl"
+    <bean id="bookService" name="service service2 bookEbi" class="com.impl.service.BookServiceImpl"
           scope="prototype">
         <property name="bookDao" ref="bookDao"/>
     </bean>
     <!--    方式一，实例化构造bean，调用无参构造方法-->
-    <bean id="bookDao" class="com.mudssky.dao.impl.BookDaoImpl" scope="prototype">
+    <bean id="bookDao" class="com.impl.dao.BookDaoImpl" scope="prototype">
     </bean>
     <!--    方式二，使用静态工厂实例化bean-->
-    <bean id="orderDao" class="com.mudssky.factory.OrderDaoFactory" factory-method="getOrderDao"/>
+    <bean id="orderDao" class="com.factory.OrderDaoFactory" factory-method="getOrderDao"/>
     <!--    方式三，使用实例工厂实例化bean-->
-    <!--    <bean id="userFactory" class="com.mudssky.factory.UserDaoFactory"/>-->
+    <!--    <bean id="userFactory" class="com.factory.UserDaoFactory"/>-->
     <!--    <bean id="userDao" factory-method="getUserDao" factory-bean="userFactory"/>-->
     <!--    方式四，使用factory bean 实例化-->
-    <bean id="userDao" class="com.mudssky.factory.UserDaoFactoryBean"/>
+    <bean id="userDao" class="com.factory.UserDaoFactoryBean"/>
 </beans>

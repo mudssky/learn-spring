@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>_019aop-pointcut</artifactId>
+    <artifactId>_020aop-advice-type</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>_019aop-pointcut</name>
+    <name>_020aop-advice-type</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>

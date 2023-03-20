@@ -1,4 +1,4 @@
-package mudssky.config;
+package com.mudssky.config;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
@@ -14,7 +14,7 @@ public class ServletConfig extends AbstractAnnotationConfigDispatcherServletInit
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[0];
+        return new Class[]{SpringConfig.class};
 
     }
 

@@ -3,9 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--配置bean-->
-    <bean id="bookDao" class="com.mudssky.dao.impl.BookDaoImpl" scope="prototype">
+    <bean id="bookDao" class="com.impl.dao.BookDaoImpl" scope="prototype">
     </bean>
-    <bean id="bookService" name="service service2 bookEbi" class="com.mudssky.service.impl.BookServiceImpl"
+    <bean id="bookService" name="service service2 bookEbi" class="com.impl.service.BookServiceImpl"
           scope="prototype">
         <!--        配置 service 和 dao 的关系,这边配完了会帮你创建新对象赋值-->
         <!--        name 是属性的名称， ref是对应的bean的名称-->

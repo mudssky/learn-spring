@@ -14,6 +14,7 @@ public class BookServiceImpl implements BookService {
     private BookDao bookDao;
 
     public boolean save(Book book) {
+        System.out.println("book" + book);
         bookDao.save(book);
         return true;
     }

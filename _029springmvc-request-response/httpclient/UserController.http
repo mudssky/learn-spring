@@ -1,4 +1,8 @@
 ###
+POST  {{baseUrl}}/user/users
+
+
+###
 POST {{baseUrl}}/user/pojoContain
 Content-Type: application/x-www-form-urlencoded
 
@@ -45,3 +49,17 @@ Content-Type: application/json
 
 ###
 GET {{baseUrl}}/user/dateParam?date=2022/03/19&date2=2022-03-16
+
+
+###
+POST {{baseUrl}}/user/toJsonPojo
+Content-Type: application/json
+
+{
+  "name": "mud",
+  "age": 12,
+  "address": {
+    "province": "shanxi",
+    "city": "beiji"
+  }
+}

@@ -1,2 +1,5 @@
-package com.mudssky.service;public interface BookService {
+package com.mudssky.service;
+
+public interface BookService {
+
 }

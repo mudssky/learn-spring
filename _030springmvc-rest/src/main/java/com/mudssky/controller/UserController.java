@@ -3,10 +3,7 @@ package com.mudssky.controller;
 import com.mudssky.domain.User;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -15,18 +12,18 @@ import java.util.List;
 @Controller
 @RequestMapping("/user")
 public class UserController {
-    @RequestMapping("/save")
+    @RequestMapping(value = "/users", method = RequestMethod.POST)
     @ResponseBody
     public String save() {
         System.out.println("user save...");
         return "{'message':'save springmvc'}";
     }
 
-    @RequestMapping("/delete")
+    @RequestMapping(value = "/users/{id}", method = RequestMethod.DELETE)
     @ResponseBody
-    public String delete() {
-        System.out.println("user delete...");
-        return "{'message':'delete springmvc'}";
+    public String delete(@PathVariable Integer id) {
+        System.out.println("user delete..." + id);
+        return "{'message':'delete springmvc'}" + id;
     }
 
     @RequestMapping("/commonParam")

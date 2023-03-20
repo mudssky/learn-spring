@@ -1,4 +1,10 @@
 ###
+POST {{baseUrl}}/user/users
+
+###
+DELETE {{baseUrl}}/user/users/2
+
+###
 POST {{baseUrl}}/user/pojoContain
 Content-Type: application/x-www-form-urlencoded
 
@@ -15,6 +21,7 @@ likes=apple&likes=banana&likes=chicken
 
 
 ###
+
 POST {{baseUrl}}/user/listParam
 Content-Type: application/x-www-form-urlencoded
 

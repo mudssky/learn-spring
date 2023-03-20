@@ -10,7 +10,7 @@ import javax.servlet.Filter;
  * @author mudssky
  */
 
-public class ServletContainersInitConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
+public class ServletConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
 
     @Override
     protected Class<?>[] getRootConfigClasses() {

@@ -1,17 +1,33 @@
 package com.mudssky.controller;
 
-import org.springframework.stereotype.Controller;
+import com.mudssky.domain.Book;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 
-@Controller
+@RestController
+@RequestMapping("/books")
 public class BookController {
 
-    @RequestMapping("/book/save")
-    @ResponseBody
-    public String save() {
-        System.out.println("book save ...");
-        return "{'module':'book save'}";
+
+    public void save(Book book) {
+
+    }
+
+    public void update(Book book) {
+    }
+
+    public void delete(Integer id) {
+    }
+
+    public Book getById(Integer id) {
+        return null;
+    }
+
+    public List<Book> getAll() {
+
+        return null;
     }
 }

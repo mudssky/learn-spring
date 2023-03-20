@@ -1,9 +1,8 @@
-package com.muddsky.service;
+package com.mudssky.service;
 
 
 import com.mudssky.config.SpringConfig;
 import com.mudssky.domain.Book;
-import com.mudssky.service.BookService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +13,7 @@ import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = SpringConfig.class)
-public class BookService{
+public class BookServiceTest {
     @Autowired
     private BookService bookService;
 
