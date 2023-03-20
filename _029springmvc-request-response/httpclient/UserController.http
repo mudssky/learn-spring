@@ -1,0 +1,47 @@
+###
+POST {{baseUrl}}/user/pojoContain
+Content-Type: application/x-www-form-urlencoded
+
+name=zhangsan&age=12&address.city=211212&address.province=shanxi
+
+
+
+
+###
+POST {{baseUrl}}/user/arrayParam
+Content-Type: application/x-www-form-urlencoded
+
+likes=apple&likes=banana&likes=chicken
+
+
+###
+POST {{baseUrl}}/user/listParam
+Content-Type: application/x-www-form-urlencoded
+
+likes=apple&likes=banana&likes=chicken
+
+###
+POST {{baseUrl}}/user/listParamForJson
+Content-Type: application/json
+
+[
+  "banana",
+  "apple",
+  "chicken"
+]
+
+###
+POST {{baseUrl}}/user/pojoParamForJson
+Content-Type: application/json
+
+{
+  "name": "mud",
+  "age": 12,
+  "address": {
+    "province": "shanxi",
+    "city": "beiji"
+  }
+}
+
+###
+GET {{baseUrl}}/user/dateParam?date=2022/03/19&date2=2022-03-16

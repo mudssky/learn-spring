@@ -19,6 +19,6 @@
         </environment>
     </environments>
     <mappers>
-        <package name="com.mudssky.dao"></package>
+        <package name="com.itheima.dao"></package>
     </mappers>
 </configuration>

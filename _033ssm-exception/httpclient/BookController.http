@@ -1,0 +1,17 @@
+###
+GET  {{baseUrl}}/books
+
+
+###
+
+POST {{baseUrl}}/books
+Content-Type: application/json
+
+{
+  "type": "dsa2",
+  "name": "lhjljlk",
+  "description": "ceshi"
+}
+
+###
+GET {{baseUrl}}/books/13
